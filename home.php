@@ -89,7 +89,7 @@ if($_SESSION['login_type'] != 1)
                           </a>
                           <br>
                           <small>
-                              Due: <?php echo date("Y-m-d",strtotime($row['end_date'])) ?>
+                              Fin: <?php echo date("Y-m-d",strtotime($row['end_date'])) ?>
                           </small>
                       </td>
                       <td class="project_progress">

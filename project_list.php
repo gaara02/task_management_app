@@ -23,8 +23,8 @@
 						<th class="text-center">#</th>
 						<th>Projet</th>
 						<th>Date debut</th>
-						<th>Due fin</th>
-						<th>Statut</th>
+						<th>Date fin</th>
+						<th>Status</th>
 						<th>Action</th>
 					</tr>
 				</thead>

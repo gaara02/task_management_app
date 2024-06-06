@@ -15,7 +15,7 @@
 			</div>
           	<div class="col-md-6">
 				<div class="form-group">
-					<label for="">Statut</label>
+					<label for="">Status</label>
 					<select name="status" id="status" class="custom-select custom-select-sm">
 						<option value="0" <?php echo isset($status) && $status == 0 ? 'selected' : '' ?>>En cours</option>
 						<option value="3" <?php echo isset($status) && $status == 3 ? 'selected' : '' ?>>En attente</option>

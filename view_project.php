@@ -156,11 +156,11 @@ $manager = $manager->num_rows > 0 ? $manager->fetch_array() : array();
 			                        <td>
 			                        	<?php 
 			                        	if($row['status'] == 1){
-									  		echo "<span class='badge badge-secondary'>Pending</span>";
+									  		echo "<span class='badge badge-secondary'>En attente</span>";
 			                        	}elseif($row['status'] == 2){
-									  		echo "<span class='badge badge-primary'>On-Progress</span>";
+									  		echo "<span class='badge badge-primary'>En progression</span>";
 			                        	}elseif($row['status'] == 3){
-									  		echo "<span class='badge badge-success'>Done</span>";
+									  		echo "<span class='badge badge-success'>Terminé</span>";
 			                        	}
 			                        	?>
 			                        </td>
@@ -266,22 +266,22 @@ $manager = $manager->num_rows > 0 ? $manager->fetch_array() : array();
 </style>
 <script>
 	$('#new_task').click(function(){
-		uni_modal("New Task For <?php echo ucwords($name) ?>","manage_task.php?pid=<?php echo $id ?>","mid-large")
+		uni_modal("Nouvelle tâche pour <?php echo ucwords($name) ?>","manage_task.php?pid=<?php echo $id ?>","mid-large")
 	})
 	$('.edit_task').click(function(){
-		uni_modal("Edit Task: "+$(this).attr('data-task'),"manage_task.php?pid=<?php echo $id ?>&id="+$(this).attr('data-id'),"mid-large")
+		uni_modal("Modifier tâche: "+$(this).attr('data-task'),"manage_task.php?pid=<?php echo $id ?>&id="+$(this).attr('data-id'),"mid-large")
 	})
 	$('.view_task').click(function(){
-		uni_modal("Task Details","view_task.php?id="+$(this).attr('data-id'),"mid-large")
+		uni_modal("Detail de la tâche","view_task.php?id="+$(this).attr('data-id'),"mid-large")
 	})
 	$('#new_productivity').click(function(){
-		uni_modal("<i class='fa fa-plus'></i> New Progress","manage_progress.php?pid=<?php echo $id ?>",'large')
+		uni_modal("<i class='fa fa-plus'></i> Nouvelle progression","manage_progress.php?pid=<?php echo $id ?>",'large')
 	})
 	$('.manage_progress').click(function(){
-		uni_modal("<i class='fa fa-edit'></i> Edit Progress","manage_progress.php?pid=<?php echo $id ?>&id="+$(this).attr('data-id'),'large')
+		uni_modal("<i class='fa fa-edit'></i> Modifier la progression","manage_progress.php?pid=<?php echo $id ?>&id="+$(this).attr('data-id'),'large')
 	})
 	$('.delete_progress').click(function(){
-	_conf("Are you sure to delete this progress?","delete_progress",[$(this).attr('data-id')])
+	_conf("Etes vous sûr de vouloir supprimer cette progression?","delete_progress",[$(this).attr('data-id')])
 	})
 	function delete_progress($id){
 		start_load()
@@ -291,7 +291,7 @@ $manager = $manager->num_rows > 0 ? $manager->fetch_array() : array();
 			data:{id:$id},
 			success:function(resp){
 				if(resp==1){
-					alert_toast("Data successfully deleted",'success')
+					alert_toast("Données supprimer avec succes",'success')
 					setTimeout(function(){
 						location.reload()
 					},1500)

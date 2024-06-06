@@ -24,7 +24,7 @@ foreach($qry as $k => $v){
       <div class="card-footer">
         <div class="container-fluid">
         	<dl>
-        		<dt>Role</dt>
+        		<dt>Rôle</dt>
         		<dd><?php echo $type_arr[$type] ?></dd>
         	</dl>
         </div>
@@ -32,7 +32,7 @@ foreach($qry as $k => $v){
 	</div>
 </div>
 <div class="modal-footer display p-0 m-0">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
 </div>
 <style>
 	#uni_modal .modal-footer{

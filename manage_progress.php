@@ -16,7 +16,7 @@ if(isset($_GET['id'])){
 				<div class="col-md-5">
 					<?php if(!isset($_GET['tid'])): ?>
 					 <div class="form-group">
-		              <label for="" class="control-label">Project Manager</label>
+		              <label for="" class="control-label">Tâche</label>
 		              <select class="form-control form-control-sm select2" name="task_id">
 		              	<option></option>
 		              	<?php 
@@ -31,7 +31,7 @@ if(isset($_GET['id'])){
 					<input type="hidden" name="task_id" value="<?php echo isset($_GET['tid']) ? $_GET['tid'] : '' ?>">
 		            <?php endif; ?>
 					<div class="form-group">
-						<label for="">Subject</label>
+						<label for="">Sujet</label>
 						<input type="text" class="form-control form-control-sm" name="subject" value="<?php echo isset($subject) ? $subject : '' ?>" required>
 					</div>
 					<div class="form-group">
@@ -39,17 +39,17 @@ if(isset($_GET['id'])){
 						<input type="date" class="form-control form-control-sm" name="date" value="<?php echo isset($date) ? date("Y-m-d",strtotime($date)) : '' ?>" required>
 					</div>
 					<div class="form-group">
-						<label for="">Start Time</label>
+						<label for="">Heure debut</label>
 						<input type="time" class="form-control form-control-sm" name="start_time" value="<?php echo isset($start_time) ? date("H:i",strtotime("2020-01-01 ".$start_time)) : '' ?>" required>
 					</div>
 					<div class="form-group">
-						<label for="">End Time</label>
+						<label for="">Heure fin</label>
 						<input type="time" class="form-control form-control-sm" name="end_time" value="<?php echo isset($end_time) ? date("H:i",strtotime("2020-01-01 ".$end_time)) : '' ?>" required>
 					</div>
 				</div>
 				<div class="col-md-7">
 					<div class="form-group">
-						<label for="">Comment/Progress Description</label>
+						<label for="">Commentaire/Description de la progression</label>
 						<textarea name="comment" id="" cols="30" rows="10" class="summernote form-control" required="">
 							<?php echo isset($comment) ? $comment : '' ?>
 						</textarea>
@@ -93,7 +93,7 @@ if(isset($_GET['id'])){
 		    type: 'POST',
 			success:function(resp){
 				if(resp == 1){
-					alert_toast('Data successfully saved',"success");
+					alert_toast('Données sauvegarder avec succes',"success");
 					setTimeout(function(){
 						location.reload()
 					},1500)

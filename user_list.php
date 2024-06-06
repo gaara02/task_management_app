@@ -38,7 +38,7 @@
 		                      <div class="dropdown-divider"></div>
 		                      <a class="dropdown-item" href="./index.php?page=edit_user&id=<?php echo $row['id'] ?>">Modifier</a>
 		                      <div class="dropdown-divider"></div>
-		                      <a class="dropdown-item delete_user" href="javascript:void(0)" data-id="<?php echo $row['id'] ?>">Supprimer</a>
+		                      <a class="dropdown-item delete_user" href="javascript:void(0)" data-id="<?php echo $row['id'] ?>">Annuler</a>
 		                    </div>
 						</td>
 					</tr>	
@@ -55,7 +55,7 @@
 		uni_modal("<i class='fa fa-id-card'></i> User Details","view_user.php?id="+$(this).attr('data-id'))
 	})
 	$('.delete_user').click(function(){
-	_conf("Are you sure to delete this user?","delete_user",[$(this).attr('data-id')])
+	_conf("Etes vous sûr de vouloir supprimer cette utilisateur?","delete_user",[$(this).attr('data-id')])
 	})
 	})
 	function delete_user($id){

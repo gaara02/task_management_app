@@ -25,8 +25,8 @@
 						<th>Tâches</th>
 						<th>Date debut projet</th>
 						<th>Date fin projet</th>
-						<th>Statut projet</th>
-						<th>Statut tâche</th>
+						<th>Status projet</th>
+						<th>Status tâche</th>
 						<th>Action</th>
 					</tr>
 				</thead>
@@ -107,7 +107,7 @@
 		                      Action
 		                    </button>
 			                    <div class="dropdown-menu" style="">
-			                      <a class="dropdown-item new_productivity" data-pid = '<?php echo $row['pid'] ?>' data-tid = '<?php echo $row['id'] ?>'  data-task = '<?php echo ucwords($row['task']) ?>'  href="javascript:void(0)">Add Productivity</a>
+			                      <a class="dropdown-item new_productivity" data-pid = '<?php echo $row['pid'] ?>' data-tid = '<?php echo $row['id'] ?>'  data-task = '<?php echo ucwords($row['task']) ?>'  href="javascript:void(0)">Ajouter une progression</a>
 								</div>
 						</td>
 					</tr>	
@@ -129,7 +129,7 @@
 	$(document).ready(function(){
 		$('#list').dataTable()
 	$('.new_productivity').click(function(){
-		uni_modal("<i class='fa fa-plus'></i> New Progress for: "+$(this).attr('data-task'),"manage_progress.php?pid="+$(this).attr('data-pid')+"&tid="+$(this).attr('data-tid'),'large')
+		uni_modal("<i class='fa fa-plus'></i> Nouvelle progression pour: "+$(this).attr('data-task'),"manage_progress.php?pid="+$(this).attr('data-pid')+"&tid="+$(this).attr('data-tid'),'large')
 	})
 	})
 	function delete_project($id){
@@ -140,7 +140,7 @@
 			data:{id:$id},
 			success:function(resp){
 				if(resp==1){
-					alert_toast("Data successfully deleted",'success')
+					alert_toast("Données supprimer avec succes",'success')
 					setTimeout(function(){
 						location.reload()
 					},1500)

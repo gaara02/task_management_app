@@ -12,7 +12,7 @@ if(isset($_GET['id'])){
 		<input type="hidden" name="id" value="<?php echo isset($id) ? $id : '' ?>">
 		<input type="hidden" name="project_id" value="<?php echo isset($_GET['pid']) ? $_GET['pid'] : '' ?>">
 		<div class="form-group">
-			<label for="">Task</label>
+			<label for="">Tâche</label>
 			<input type="text" class="form-control form-control-sm" name="task" value="<?php echo isset($task) ? $task : '' ?>" required>
 		</div>
 		<div class="form-group">
@@ -64,7 +64,7 @@ if(isset($_GET['id'])){
 		    type: 'POST',
 			success:function(resp){
 				if(resp == 1){
-					alert_toast('Data successfully saved',"success");
+					alert_toast('Données sauvegarder avec succes',"success");
 					setTimeout(function(){
 						location.reload()
 					},1500)
