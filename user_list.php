@@ -52,7 +52,7 @@
 	$(document).ready(function(){
 		$('#list').dataTable()
 	$('.view_user').click(function(){
-		uni_modal("<i class='fa fa-id-card'></i> User Details","view_user.php?id="+$(this).attr('data-id'))
+		uni_modal("<i class='fa fa-id-card'></i> Details utilisateur","view_user.php?id="+$(this).attr('data-id'))
 	})
 	$('.delete_user').click(function(){
 	_conf("Etes vous sûr de vouloir supprimer cette utilisateur?","delete_user",[$(this).attr('data-id')])

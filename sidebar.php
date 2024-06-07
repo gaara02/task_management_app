@@ -4,7 +4,7 @@
         <?php if($_SESSION['login_type'] == 1): ?>
         <h3 class="text-center p-0 m-0"><b>ADMIN</b></h3>
         <?php else: ?>
-        <h3 class="text-center p-0 m-0"><b>USER</b></h3>
+        <h3 class="text-center p-0 m-0"><b>Agent</b></h3>
         <?php endif; ?>
 
     </a>

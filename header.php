@@ -5,7 +5,26 @@
   date_default_timezone_set("Asia/Manila");
   
   ob_start();
-  $title = isset($_GET['page']) ? ucwords(str_replace("_", ' ', $_GET['page'])) : "Home";
+  $translations = array(
+    'home' => 'Accueil',
+    'new_user' => 'Nouvel utilisateur',
+    'task_list' => 'Liste des tâches',
+    'new_project' => 'Nouveau projet',
+    'project_list' => 'Liste des projets',
+    'reports' => 'Rapport',
+    'user_list' => 'Liste Utilisateur',
+
+
+    
+    
+    // Ajoutez d'autres traductions ici
+);
+
+// Récupérer le nom de la page à partir de l'URL
+$page = isset($_GET['page']) ? $_GET['page'] : 'home';
+
+// Vérifier si une traduction existe pour cette page
+$title = array_key_exists($page, $translations) ? $translations[$page] : ucwords(str_replace("_", ' ', $page));
   ?>
   <title><?php echo $title ?> | <?php echo $_SESSION['system']['name'] ?></title>
   <?php ob_end_flush() ?>
