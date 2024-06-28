@@ -45,7 +45,7 @@ $manager = $manager->num_rows > 0 ? $manager->fetch_array() : array();
 								<dd><?php echo date("F d, Y",strtotime($end_date)) ?></dd>
 							</dl>
 							<dl>
-								<dt><b class="border-bottom border-primary">Status</b></dt>
+								<dt><b class="border-bottom border-primary">Statut</b></dt>
 								<dd>
 									<?php
 									  if($stat[$status] =='En cours'){
@@ -85,7 +85,7 @@ $manager = $manager->num_rows > 0 ? $manager->fetch_array() : array();
 	</div>
 	<div class="row">
 		<div class="col-md-4">
-			<div class="card card-outline card-primary">
+			<div class="card card-outline card-primary" style="border-color: #D7714D;">
 				<div class="card-header">
 					<span><b>Membre de l'equipe:</b></span>
 					<div class="card-tools">
@@ -113,7 +113,7 @@ $manager = $manager->num_rows > 0 ? $manager->fetch_array() : array();
 			</div>
 		</div>
 		<div class="col-md-8">
-			<div class="card card-outline card-primary">
+			<div class="card card-outline card-primary" style="border-color: #D7714D;">
 				<div class="card-header">
 					<span><b>Liste des tâches:</b></span>
 					<?php if($_SESSION['login_type'] != 3): ?>

@@ -13,7 +13,7 @@ if(isset($_GET['id'])){
 		<dd><?php echo ucwords($task) ?></dd>
 	</dl>
 	<dl>
-		<dt><b class="border-bottom border-primary">Status</b></dt>
+		<dt><b class="border-bottom border-primary">Statut</b></dt>
 		<dd>
 			<?php 
         	if($status == 1){

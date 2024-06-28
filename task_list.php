@@ -1,6 +1,6 @@
 <?php include'db_connect.php' ?>
 <div class="col-lg-12">
-	<div class="card card-outline card-success">
+	<div class="card card-outline card-success" style="border-color: #D7714D;">
 		<div class="card-header">
 			<div class="card-tools">
 				<a class="btn btn-block btn-sm btn-default btn-flat border-primary" href="./index.php?page=new_project"><i class="fa fa-plus"></i> Ajouter nouveau projet</a>
@@ -25,8 +25,8 @@
 						<th>Tâches</th>
 						<th>Date debut projet</th>
 						<th>Date fin projet</th>
-						<th>Status projet</th>
-						<th>Status tâche</th>
+						<th>Statut projet</th>
+						<th>Statut tâche</th>
 						<th>Action</th>
 					</tr>
 				</thead>

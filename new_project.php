@@ -1,7 +1,7 @@
 <?php if(!isset($conn)){ include 'db_connect.php'; } ?>
 
 <div class="col-lg-12">
-	<div class="card card-outline card-primary">
+	<div class="card card-outline card-primary" style="border-color: #D7714D;">
 		<div class="card-body">
 			<form action="" id="manage-project">
 
@@ -15,7 +15,7 @@
 			</div>
           	<div class="col-md-6">
 				<div class="form-group">
-					<label for="">Status</label>
+					<label for="">Statut</label>
 					<select name="status" id="status" class="custom-select custom-select-sm">
 						<option value="0" <?php echo isset($status) && $status == 0 ? 'selected' : '' ?>>En cours</option>
 						<option value="3" <?php echo isset($status) && $status == 3 ? 'selected' : '' ?>>En attente</option>
@@ -86,7 +86,7 @@
     	</div>
     	<div class="card-footer border-top border-info">
     		<div class="d-flex w-100 justify-content-center align-items-center">
-    			<button class="btn btn-flat  bg-gradient-primary mx-2" form="manage-project">Sauvegarder</button>
+    			<button class="btn btn-flat  bg-gradient-primary mx-2" form="manage-project" style="background-color: white;">Sauvegarder</button>
     			<button class="btn btn-flat bg-gradient-secondary mx-2" type="button" onclick="location.href='index.php?page=project_list'">annuler</button>
     		</div>
     	</div>

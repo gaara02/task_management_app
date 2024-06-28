@@ -1,6 +1,6 @@
 <?php include 'db_connect.php' ?>
  <div class="col-md-12">
-        <div class="card card-outline card-success">
+        <div class="card card-outline card-success" style="border-color: #D7714D;">
           <div class="card-header">
             <b>Progression projet</b>
             <div class="card-tools">

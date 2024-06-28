@@ -38,7 +38,7 @@
           </div><!-- /.col -->
 
         </div><!-- /.row -->
-            <hr class="border-primary">
+        <hr style="border: 1px solid #D7714D;">
       </div><!-- /.container-fluid -->
     </div>
     <!-- /.content-header -->

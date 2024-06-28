@@ -1,5 +1,5 @@
 <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand navbar-primary navbar-dark ">
+  <nav class="main-header navbar navbar-expand navbar-dark" style="background-color: #D7714D;">
     <!-- Left navbar links -->
     <ul class="navbar-nav">
       <?php if(isset($_SESSION['login_id'])): ?>
@@ -39,6 +39,6 @@
   <!-- /.navbar -->
   <script>
      $('#manage_account').click(function(){
-        uni_modal('Manage Account','manage_user.php?id=<?php echo $_SESSION['login_id'] ?>')
+        uni_modal('Gerer le compte','manage_user.php?id=<?php echo $_SESSION['login_id'] ?>')
       })
   </script>

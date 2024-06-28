@@ -76,12 +76,12 @@ foreach($user->fetch_array() as $k =>$v){
 		    type: 'POST',
 			success:function(resp){
 				if(resp ==1){
-					alert_toast("Data successfully saved",'success')
+					alert_toast("Donnee sauvegarder avec succes",'success')
 					setTimeout(function(){
 						location.reload()
 					},1500)
 				}else{
-					$('#msg').html('<div class="alert alert-danger">Username already exist</div>')
+					$('#msg').html('<div class="alert alert-danger">Ce nom d\'utilisateur existe déja</div>')
 					end_load()
 				}
 			}

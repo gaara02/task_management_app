@@ -8,7 +8,7 @@ if($_SESSION['login_type'] != 1)
  <div class="col-12">
           <div class="card">
             <div class="card-body">
-              Bienvenue <?php echo $_SESSION['login_name'] ?>!
+              <h4>Bienvenue <?php echo $_SESSION['login_name'] ?>!</h4>
             </div>
           </div>
   </div>
@@ -31,8 +31,8 @@ if($_SESSION['login_type'] != 1)
         
       <div class="row">
         <div class="col-md-8">
-        <div class="card card-outline card-success">
-          <div class="card-header">
+        <div class="card card-outline card-success" style="border-color: #D7714D; ">
+          <div class="card-header" >
             <b>Progression des projets</b>
           </div>
           <div class="card-body p-0">
@@ -49,7 +49,7 @@ if($_SESSION['login_type'] != 1)
                   <th>#</th>
                   <th>Projet</th>
                   <th>Progression</th>
-                  <th>Status</th>
+                  <th>Statut</th>
                   <th></th>
                 </thead>
                 <tbody>
@@ -119,7 +119,7 @@ if($_SESSION['login_type'] != 1)
                           ?>
                       </td>
                       <td>
-                        <a class="btn btn-primary btn-sm" href="./index.php?page=view_project&id=<?php echo $row['id'] ?>">
+                        <a class="btn btn-primary btn-sm" style="background-color: #D7714D; border: none" href="./index.php?page=view_project&id=<?php echo $row['id'] ?>">
                               <i class="fas fa-folder">
                               </i>
                               Voir

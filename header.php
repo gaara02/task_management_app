@@ -13,6 +13,10 @@
     'project_list' => 'Liste des projets',
     'reports' => 'Rapport',
     'user_list' => 'Liste Utilisateur',
+    'edit_user' => 'Modifier utilisateur',
+    'manage_task' => 'Gerer les tâches',
+    'view_project' => 'Voir projet',
+
 
 
     

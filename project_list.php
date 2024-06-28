@@ -1,6 +1,6 @@
 <?php include'db_connect.php' ?>
 <div class="col-lg-12">
-	<div class="card card-outline card-success">
+	<div class="card card-outline card-success" style="border-color: #D7714D;">
 		<div class="card-header">
             <?php if($_SESSION['login_type'] != 3): ?>
 			<div class="card-tools">
@@ -24,7 +24,7 @@
 						<th>Projet</th>
 						<th>Date debut</th>
 						<th>Date fin</th>
-						<th>Status</th>
+						<th>Statut</th>
 						<th>Action</th>
 					</tr>
 				</thead>
