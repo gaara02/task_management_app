@@ -22,20 +22,20 @@
   <?php include 'topbar.php' ?>
   <?php include 'sidebar.php' ?>
 
-  <!-- Content Wrapper. Contains page content -->
+  
   <div class="content-wrapper">
   	 <div class="toast" id="alert_toast" role="alert" aria-live="assertive" aria-atomic="true">
 	    <div class="toast-body text-white">
 	    </div>
 	  </div>
     <div id="toastsContainerTopRight" class="toasts-top-right fixed"></div>
-    <!-- Content Header (Page header) -->
+  
     <div class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
             <h1 class="m-0"><?php echo $title ?></h1>
-          </div><!-- /.col -->
+          </div>
 
         </div><!-- /.row -->
         <hr style="border: 1px solid #D7714D;">
